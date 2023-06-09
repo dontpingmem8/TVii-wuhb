@@ -8,13 +8,13 @@ int main() {
 
 	if (WHBProcIsRunning()) {
 		if (
-			SYSCheckTitleExists(0x000500301001300A) || // * JPN
-			SYSCheckTitleExists(0x000500301001310A) || // * USA
-			SYSCheckTitleExists(0x000500301001320A)    // * EUR
+			SYSCheckTitleExists(0x000500301004D000) || // * JPN
+			SYSCheckTitleExists(0x000500301004D100) || // * USA
+			SYSCheckTitleExists(0x000500301004D200)    // * EUR
 		) {
-			_SYSSwitchTo(SYSAPP_PFID_TVII);
+			_SYSSwitchTo(SYSAPP_PFID_NOTIFICATIONS);
 		} else {
-			OSFatal("Failed to find TVii");
+			OSFatal("Failed to find Notifications");
 		}
 
 		while(WHBProcIsRunning()) {}
