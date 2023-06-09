@@ -15,9 +15,9 @@ TOPDIR ?= $(CURDIR)
 # APP_SHORTNAME sets the short name of the application
 # APP_AUTHOR sets the author of the application
 #-------------------------------------------------------------------------------
-APP_NAME		:= TVii
-APP_SHORTNAME	:= TVii
-APP_AUTHOR		:= Pretendo Devs
+APP_NAME		:= Notifications
+APP_SHORTNAME	:= Notifications
+APP_AUTHOR		:= Mikey
 
 include $(DEVKITPRO)/wut/share/wut_rules
 
@@ -32,7 +32,7 @@ include $(DEVKITPRO)/wut/share/wut_rules
 # TV_SPLASH is the image displayed during bootup on the TV, leave blank to use default rule
 # DRC_SPLASH is the image displayed during bootup on the DRC, leave blank to use default rule
 #-------------------------------------------------------------------------------
-TARGET		:=	TVii
+TARGET		:=	Notifications
 BUILD		:=	build
 SOURCES		:=	src
 DATA		:=	data
